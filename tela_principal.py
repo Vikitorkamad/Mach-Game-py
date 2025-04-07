@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 from tela_jogo import TelaJogo
 from tela_instrucoes import TelaInstrucoes
-
+from utilitarios import resetTela
 class TelaPrincipal:
     def __init__(self, master):
         self.master = master
@@ -13,7 +13,7 @@ class TelaPrincipal:
         # Botões para abrir as telas
         self.button_jogar = tk.Button(master, text="Jogar", command=self.abrir_tela_jogo, font=("Arial", 24))
         self.button_jogar.pack(pady=20)
-
+        
         self.button_instrucoes = tk.Button(master, text="Instruções", command=self.abrir_tela_instrucoes, font=("Arial", 24))
         self.button_instrucoes.pack(pady=20)
 
